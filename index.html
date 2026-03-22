@@ -374,8 +374,14 @@
 
     .service-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
+    }
+
+    @media (max-width: 600px) {
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     .service-card {
@@ -1060,6 +1066,11 @@
         <h3>So What?</h3>
         <p>뉴스를 읽고 끝이 아닙니다.<br />'그래서 나한테 어떤 의미인데?'까지 알려드립니다.</p>
       </div>
+      <div class="service-card reveal reveal-delay-4">
+        <span class="service-icon">🤖</span>
+        <h3>AI 꿀팁</h3>
+        <p>Claude, Gemini, ChatGPT...<br />바로 써먹는 AI 활용법까지.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -1082,7 +1093,7 @@
         <div class="day-label">TUE</div>
         <span class="day-emoji">🇨🇳</span>
         <div class="day-title">중국어 회화</div>
-        <div class="day-sub">AI·Tech 트렌드</div>
+        <div class="day-sub">AI 코딩 꿀팁</div>
       </div>
       <div class="day-card reveal reveal-delay-3">
         <div class="day-label">WED</div>
@@ -1094,7 +1105,7 @@
         <div class="day-label">THU</div>
         <span class="day-emoji">🇺🇸</span>
         <div class="day-title">영어 트렌드</div>
-        <div class="day-sub">커리어·머니</div>
+        <div class="day-sub">AI 신규 소식</div>
       </div>
       <div class="day-card reveal">
         <div class="day-label">FRI</div>
@@ -1146,6 +1157,12 @@ Good Morning! ☀️
 🔍 <strong>So What?</strong>
 금리 동결 = 원/달러 환율 하방 제한.
 수출기업은 환헤지 점검 시점.
+
+<hr class="divider" />
+
+🤖 <strong>오늘의 AI 꿀팁 — Claude Code</strong>
+💡 Git 커밋 자동화
+/commit 입력하면 변경사항 분석 후 커밋 메시지 자동 생성. 코드리뷰도 한 번에!
 
 좋은 한 주 시작하세요! 🙌</div>
           <div class="kakao-time">오전 8:00</div>
